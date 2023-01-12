@@ -1,0 +1,87 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax Scrolling Website</title>
+    <link rel="stylesheet" type="text/css"  href="style.css">
+</head>
+    <body>
+        <header id="header">
+            <a href="#" class="Logo">logo</a>
+            <ul class="navigation">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Contacts</a></li>
+            </ul>
+        </header>
+        <section>
+            <h2 id="txt">Hello Winter</h2>
+            <img src="img/monutain_01.png" id="m1">
+            <img src="img/monutain_02.png" id="m2">
+            <img src="img/monutain_03.png" id="m3">
+            <img src="img/monutain_04.png" id="m4">
+            <img src="img/trees.png" id="tr">
+            <img src="img/cable_cars.png" id="crs">
+            <img src="img/house.png" id="house">
+        </section>
+        <div class="sec">
+            <h2>Parallax Scrolling Website</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate praesentium, at mollitia alias illo laborum ipsa eveniet maxime dolore unde ab harum placeat porro atque obcaecati ipsam officia facilis sed suscipit provident necessitatibus. Iste vero dicta inventore at delectus, odit nisi. Quidem inventore, sapiente veniam est eaque aliquid vero ad vitae corporis maxime. Pariatur error, quos odit commodi animi nam eum unde laudantium accusamus amet. Necessitatibus facere aperiam ipsam quasi culpa enim eveniet autem ullam ad est quas voluptatum quod aspernatur corporis, et qui odio a mollitia debitis ratione earum inventore? Officia, id! Sint libero ad enim aliquam cumque nam, temporibus dolor fugit tempora magni labore voluptates illum voluptatem reiciendis quasi officia, voluptas pariatur mollitia? Recusandae, quis ipsa dolorum iure accusamus qui in atque perspiciatis ea earum inventore accusantium nesciunt, pariatur dolor saepe laudantium, voluptatibus voluptatum quae delectus architecto. Fuga fugiat quibusdam nostrum illo modi error iste ducimus enim? Tempore ratione architecto odio? Suscipit dolorum eius voluptate, soluta quod recusandae itaque ut eum, eligendi fuga amet architecto quis. Ullam officia officiis nobis, cupiditate fugiat odio incidunt dolorum iusto, aspernatur numquam tenetur, odit cum totam repellat. Sequi necessitatibus blanditiis amet. Consequuntur nisi, aut cum doloribus nesciunt a modi. Nemo, dolores laborum.</p>
+            
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+        <script>
+
+            gsap.from("#txt",{
+                scrollTrigger:{
+                    scrub:true
+                },
+                x: 350,
+            })
+            gsap.from("#m1",{
+                scrollTrigger:{
+                    scrub:true
+                },
+                y: 100,
+            })
+            gsap.from("#m2",{
+                scrollTrigger:{
+                    scrub:true
+                },
+                y: 50,
+            })
+            gsap.from("#m3",{
+                scrollTrigger:{
+                    scrub:true
+                },
+                y: 200,
+            })
+            gsap.from("#m4",{
+                scrollTrigger:{
+                    scrub:true
+                },
+                y: 150,
+            })
+            gsap.from("#tr",{
+                scrollTrigger:{
+                    scrub:true
+                },
+                y: 150,
+            })
+            gsap.from("#crs",{
+                scrollTrigger:{
+                    scrub:true
+                },
+                x: 100,
+            })
+            gsap.from("#house",{
+                scrollTrigger:{
+                    scrub:true
+                },
+                y: 50,
+            })
+        </script>
+    </body>
+</html>
